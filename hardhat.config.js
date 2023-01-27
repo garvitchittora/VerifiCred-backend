@@ -29,6 +29,10 @@ module.exports = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    matic: {
+      url: "https://rpc-mumbai.maticvigil.com",
+      accounts: ["private_key"]
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
